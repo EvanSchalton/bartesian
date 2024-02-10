@@ -1,6 +1,6 @@
-from tensorflow.keras.models import Model
-from sklearn.model_selection import KFold
-import numpy as np
+from tensorflow.keras.models import Model  # type:ignore
+from sklearn.model_selection import KFold  # type:ignore
+import numpy as np  # type:ignore
 import random
 
 from bartesian.ml.interfaces.training_data import TrainingData
