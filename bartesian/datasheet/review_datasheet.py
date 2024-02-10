@@ -1,8 +1,8 @@
-from .datasheet_record import DataSheetRecord
+from .datasheet_record import DatasheetRecord
 from ..configs import LIQUOR_ORDER, STRENGTH_ORDER
 
 
-def review_datasheet(datasheet: list[DataSheetRecord]) -> None:
+def review_datasheet(datasheet: list[DatasheetRecord]) -> None:
     """Review the dataset."""
     all_records = {i["drink"]: i for i in datasheet}
     records = {i["drink"]: i for i in datasheet if i["image"]}

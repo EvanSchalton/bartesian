@@ -15,21 +15,18 @@ from .barcodes import (
 
 from .datasheet import (
     load_data,
-    DataSheetRecord,
+    DatasheetRecord,
     review_datasheet,
 )
 
-from .configs import (
-    LIQUOR_ORDER,
-    STRENGTH_ORDER
-)
+from .configs import LIQUOR_ORDER, STRENGTH_ORDER
 
-from .enums import (
-    Drink
-)
+from .enums import Drink
 
 from .ml import (
     record_to_matrix,
+    create_model,
+    train_model,
 )
 
 __all__ = [
@@ -46,10 +43,12 @@ __all__ = [
     "BarcodeVocabulary",
     "draw_barcode",
     "load_data",
-    "DataSheetRecord",
+    "DatasheetRecord",
     "LIQUOR_ORDER",
     "STRENGTH_ORDER",
     "review_datasheet",
     "Drink",
-    "record_to_matrix"
+    "record_to_matrix",
+    "create_model",
+    "train_model",
 ]

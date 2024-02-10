@@ -1,7 +1,8 @@
 from typing import TypedDict
 from bartesian.enums.drink import Drink
 
-class DataSheetRecord(TypedDict):
+
+class DatasheetRecord(TypedDict):
     drink: Drink
     image: bool
     Tequila: bool
